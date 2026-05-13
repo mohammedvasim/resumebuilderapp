@@ -10,6 +10,6 @@ import in.vasim.resumebuilderapi.document.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, String> {
     Optional<User> findByEmail(String email);
-    Boolean ExistsByEmail(String email);
+    boolean existsByEmail(String email);
     
 }

@@ -24,7 +24,7 @@ public class AuthService {
         log.info("Inside Authservice: register(){}", request);
         // Check if user with the same email already exists
 
-        if(userRepository.ExistsByEmail(request.getEmail())) {
+        if(userRepository.existsByEmail(request.getEmail())) {
             throw new RuntimeException("Email is already in use");
         }
 
